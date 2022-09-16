@@ -7,14 +7,17 @@
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "test:watch": "npm run test -- --watch",
-    "start": "node index.js"
+    "start": "node index.js",
+    "start:watch": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@types/express": "^4.17.13",
     "@types/jest": "^29.0.1",
+    "dotenv": "^16.0.2",
     "jest": "^29.0.3",
+    "nodemon": "^2.0.20",
     "supertest": "^6.2.4"
   }
 }
