@@ -15,6 +15,7 @@ const log = (...args) => {
   }
 
 server.listen(port, hostname, () => {
+    console.log(server.address());
     log(`🚀 Server listening on ${JSON.stringify(server.address())}!`)
 });
 log('🚀 W E L C O M E  T O  T H E  R E Q U E S T  L I N E 🚀');
