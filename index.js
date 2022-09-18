@@ -12,10 +12,10 @@ const log = (...args) => {
     if(process.env['NODE_ENV'] !== 'test') {
         console.log(('[server]'), ...args);
     }
-  }
+    }
 
 server.listen(port, hostname, () => {
     console.log(server.address());
-    log(`🚀 Server listening on ${JSON.stringify(server.address())}!`)
+    log(`📞 Server listening on ${JSON.stringify(server.address())}!`)
 });
 log('📞 W E L C O M E  T O  T H E  R E Q .  L I N E 📞');
